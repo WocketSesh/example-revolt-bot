@@ -7,9 +7,9 @@ const unmute = new Command({
 });
 
 unmute.on("ran", (message, args) => {
-	if (!args[1])
+	if (!args[0])
 		return message.channel.sendMessage(
-			"Invalid Arguments; expected: `!unmute <user> <reason`"
+			"Invalid Arguments; expected: `!unmute <user> <reason>`"
 		);
 
 	let user = message.mentions ? message.mention_ids[0] : args[0];
