@@ -45,7 +45,7 @@ mute.on("ran", (message, args) => {
 					);
 
 					setTimeout(() => {
-						if (!x.roles.filter((x) => x == "01FF25Q5X61ZCP5M3HCERX6YDT"))
+						if (!x.roles.filter((x) => x == "01FF25Q5X61ZCP5M3HCERX6YDT")[0])
 							return;
 						x.edit({
 							roles: x.roles.filter((x) => x != "01FF25Q5X61ZCP5M3HCERX6YDT"),
